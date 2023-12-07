@@ -9,7 +9,6 @@ project(basic_pkg)
 ## is used, also find other catkin packages
 find_package(catkin REQUIRED COMPONENTS
   geometry_msgs
-  joy_msgs
   rospy
   sensor_msgs
   std_msgs
