@@ -13,7 +13,7 @@ This Python script provides a basic obstacle avoidance and safety control mechan
 1. Ensure that ROS is installed on your system.
 2. Clone this repository into your ROS workspace.
    ~~~bash
-   git clone https://github.com/your-username/your-repository.git
+   git clone https://github.com/SherbyRobotics/jackal.git
    ~~~
 3. Build your ROS workspace.
    ~~~bash
@@ -32,7 +32,6 @@ This Python script provides a basic obstacle avoidance and safety control mechan
    ~~~
 
 
-
 ## Node Details
 - **Node Name:** control_test
 - **Subscribed Topics:**
@@ -42,6 +41,11 @@ This Python script provides a basic obstacle avoidance and safety control mechan
   - `/bluetooth_teleop/cmd_vel`: Velocity commands from Bluetooth teleoperation.
   - `/joy_teleop/cmd_vel`: Velocity commands from joystick teleoperation.
   - `/jackal_velocity_controller/odom`: Odometry data for monitoring the Jackal's speed.
+
+- **Published Topics:**
+  - `/con_vel`: Twist data to move the jackal.
+
+The con_vel topic is sent to a twist_mux node to control the jackal. The priority of con_vel can be changed in /config/twist_mux.yaml .
 
 ## Parameters
 - `front_scan_point`: Number of points used for the front laser scanner.
