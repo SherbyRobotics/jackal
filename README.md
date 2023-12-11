@@ -9,6 +9,8 @@ This Python script provides a basic obstacle avoidance and safety control mechan
 - NumPy
 - Jackal simulation environment
 
+### For more information on the jackal and how to connect to it, refer to the doc/jackal.pptx and the user manuals
+
 ## Installation
 1. Ensure that ROS is installed on your system.
 2. Clone this repository into your ROS workspace.
