@@ -7,17 +7,19 @@ This Python script provides a basic obstacle avoidance and safety control mechan
 - ROS (Robot Operating System)
 - Python 2.7 or later
 - NumPy
-- Jackal simulation environment
+- Jackal simulation 
+- Tested on ubuntu 18.04 with ROS Melodic
 
-### For more information on the jackal and how to connect to it, refer to the doc/jackal.pptx and the user manuals
+## For more information on the jackal and how to connect to it, refer to the doc/jackal.pptx and the user manuals
 
 ## Installation
 1. Ensure that ROS is installed on your system.
-2. Clone this repository into your ROS workspace.
+2. Create or go to your ros workspace.
+3. Clone this repository into your ROS workspace.
    ~~~bash
    git clone https://github.com/SherbyRobotics/jackal.git
    ~~~
-3. Build your ROS workspace.
+4. Build your ROS workspace.
    ~~~bash
    cd your-ros-workspace
    catkin_make
